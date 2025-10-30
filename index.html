@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบสำรวจความต้องการของนักเรียนไทยในการสอบ CSCA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 24px;
+            padding: 40px 30px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .logo {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 20px;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+        .title {
+            font-size: 28px;
+            font-weight: 600;
+            color: #2d3748;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 16px;
+            color: #718096;
+            margin-bottom: 32px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        
+        .social-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        
+        .social-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 24px;
+            border-radius: 16px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .social-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .social-btn:hover::before {
+            left: 100%;
+        }
+        
+        .social-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+        
+        .facebook {
+            background: linear-gradient(135deg, #1877f2, #42a5f5);
+            color: white;
+        }
+        
+        .instagram {
+            background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
+            color: white;
+        }
+        
+        .tiktok {
+            background: linear-gradient(135deg, #000000, #ff0050);
+            color: white;
+        }
+        
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
+            fill: currentColor;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px;
+                margin: 10px;
+            }
+            
+            .title {
+                font-size: 24px;
+            }
+            
+            .subtitle {
+                font-size: 14px;
+            }
+            
+            .social-btn {
+                padding: 14px 20px;
+                font-size: 15px;
+            }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .container > * {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+        
+        .container > *:nth-child(2) { animation-delay: 0.1s; }
+        .container > *:nth-child(3) { animation-delay: 0.2s; }
+        .container > *:nth-child(4) { animation-delay: 0.3s; }
+        .container > *:nth-child(5) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgdmlld0JveD0iMCAwIDIwMCAyMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxkZWZzPgo8bGluZWFyR3JhZGllbnQgaWQ9ImdyYWRpZW50MSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyRDdEMzIiLz4KPHN0b3Agb2Zmc2V0PSIzMCUiIHN0b3AtY29sb3I9IiM0M0EwNDciLz4KPHN0b3Agb2Zmc2V0PSI2MCUiIHN0b3AtY29sb3I9IiM4QkMzNEEiLz4KPHN0b3Agb2Zmc2V0PSI4MCUiIHN0b3AtY29sb3I9IiNDREU2OEQiLz4KPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRjFGNkIwIi8+CjwvbGluZWFyR3JhZGllbnQ+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQyIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjEwMCUiIHkyPSIxMDAlIj4KPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI0Y1REMzNyIvPgo8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNGRkY1ODAiLz4KPC9saW5lYXJHcmFkaWVudD4KPC9kZWZzPgo8IS0tIEJhc2UgUGxhdGZvcm0gLS0+CjxwYXRoIGQ9Ik0yMCAxNjBMMjAgMTgwTDE4MiAxODBMMTgyIDE2MEwyMCAxNjBaIiBmaWxsPSJ1cmwoI2dyYWRpZW50MSkiLz4KPCEtLSBMZWZ0IEJyYWNrZXQgLS0+CjxwYXRoIGQ9Ik0yMCAzMEwyMCAxNzBMNDAgMTcwTDQwIDUwTDYwIDUwTDYwIDMwTDIwIDMwWiIgZmlsbD0idXJsKCNncmFkaWVudDEpIi8+CjwhLS0gQ2VudGVyIExldHRlciBPIC0tPgo8cGF0aCBkPSJNNzAgNzBMNzAgMTEwTDEwMCAxMTBMMTAwIDEzMEwxMzAgMTMwTDEzMCAxMTBMMTYwIDExMEwxNjAgNzBMMTMwIDcwTDEzMCA1MEwxMDAgNTBMMTAwIDcwTDcwIDcwWk05MCA5MUw5MCA5MEwxMTAgOTBMMTEwIDExMEwxNDAgMTEwTDE0MCA5MEwxMTAgOTBMMTEwIDcwTDkwIDcwTDkwIDkxWiIgZmlsbD0idXJsKCNncmFkaWVudDEpIi8+CjwhLS0gUmlnaHQgQnJhY2tldCAtLT4KPHBhdGggZD0iTTE0MCAzMEwxNDAgNTBMMTYwIDUwTDE2MCA1MEwxNzAgNTBMMTcwIDMwTDE0MCAzMFoiIGZpbGw9InVybCgjZ3JhZGllbnQxKSIvPgo8IS0tIFZlcnRpY2FsIFJpZ2h0IC0tPgo8cGF0aCBkPSJNMTYwIDEwMEwxNjAgMTcwTDE4MiAxNzBMMTgyIDEwMEwxNjAgMTAwWiIgZmlsbD0idXJsKCNncmFkaWVudDEpIi8+CjwhLS0gRCBMZXR0ZXIgLS0+CjxwYXRoIGQ9Ik0xMzAgMTEwTDEzMCAxNDBMMTUwIDE0MEwxNTAgMTYwTDE4MiAxNjBMMTgyIDE0MEwxNjAgMTQwTDE2MCA5MEwxODIgOTBMMTgyIDcwTDE1MCA3MEwxNTAgOTBMMTMwIDkwTDEzMCAxMTBaTTE1MCA5MEwxNTAgMTE0TDE2MiAxMTRMMTYyIDkwTDE1MCA5MFoiIGZpbGw9InVybCgjZ3JhZGllbnQyKSIvPgo8IS0tIERlY29yYXRpdmUgRWxlbWVudHMgLS0+CjxwYXRoIGQ9Ik0xMzAgNzBMMTMwIDUwTDEwMCA1MEwxMDAgNzBMMTMwIDcwWiIgZmlsbC1vcGFjaXR5PSIwLjciIGZpbGw9InVybCgjZ3JhZGllbnQyKSIvPgo8L3N2Zz4K" alt="LORD Logo"/>
+        </div>
+        <h1 class="title">แบบสำรวจความต้องการของนักเรียนไทยในการสอบ CSCA </h1>
+        <p class="subtitle">CSCA (China Scholastic Competency Assessment)/p>
+        
+        <div class="social-buttons">
+            <a href="https://www.facebook.com/share/p/1H2joFzkUe/">
+                <svg class="social-icon" viewBox="0 0 24 24">
+                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                Facebook
+            </a>
+        </div>
+    </div>
+</body>
+</html>
